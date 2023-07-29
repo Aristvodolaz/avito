@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/close_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Транспорт"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/auto"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Автомобили"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/moto"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Мотоциклы и мототехника"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/big_car"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Грузовики и спецтехника"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/woter"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Водный транспорт"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/zapchasti"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Запчасти и акссесуары"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

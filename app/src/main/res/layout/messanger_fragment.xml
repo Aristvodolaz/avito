@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listView"
+    android:layout_above="@+id/inputLayout"
+    android:divider="@color/blue"
+    android:dividerHeight="0dp"/>
+    <LinearLayout
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputLayout"
+        android:padding="8dp">
+        <EditText
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:hint="Введите сообщение"
+            android:textSize="14sp"
+            android:textColorHint="@color/grey"  />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/send"
+            android:text="Отправить"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

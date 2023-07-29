@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ShopForAll</string>
+    <string name="wait" translatable="false">Пожалуйста подождите</string>
+</resources>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/close_btn"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/back_arrow"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:text="Кузов авто"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"/>
+
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Добавьте фото, чтобы остальные покупатели могли увидеть машину."></TextView>
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/image"/>
+        <FrameLayout
+            android:id="@+id/add_photo"
+            android:layout_gravity="center"
+            android:layout_width="140dp"
+            android:background="@color/grey"
+            android:layout_height="90dp"
+            android:gravity="center">
+
+            <ImageView
+                android:paddingTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/camera_svgrepo_com"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Добавить фото"
+                android:gravity="center"/>
+        </FrameLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/next_btn"
+            android:textAllCaps="false"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Продолжить"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"/>
+    </LinearLayout>
+</RelativeLayout>
